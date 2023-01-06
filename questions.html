@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<script src="app.js" differ></script>
+		<title>Quizz</title>
+	</head>
+	<body>
+		<h1 class="text-center text-danger mb-5">Welcome to Football Quizz</h1>
+		<div class="container">
+			<form onsubmit="event.preventDefault()">
+				<div class="row" id="ques0">
+					<div class="col-md-3"></div>
+					<div class="col-md-6 text-center">
+						<button class="btn btn-primary " onclick="firstQuestion()">Start Quizz</button>
+					</div>
+				</div>
+				<div class="row" id="ques1">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset >
+							<p class="fs-3 text-decoration-underline text-center">Question1</p>
+							<p class="fs-4 ms-2">🤔 Who is the winner of the 1966 World Cup?</p>
+							<input class="form-check-input" type="radio" id="ans11" name="qu1">
+							<label class="form-check-label fs-4" for="ans11">England</label><br>
+							<input class="form-check-input" type="radio" id="ans12" name="qu1">
+							<label class="form-check-label fs-4" for="ans12">Germany</label><br>
+							<input class="form-check-input" type="radio" id="ans13" name="qu1">
+							<label class="form-check-label fs-4" for="ans13">Portugal</label><br>
+							<input class="form-check-input" type="radio" id="ans14" name="qu1">
+							<label class="form-check-label fs-4" for="ans14">Brazil</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r1"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques2">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question2</p>
+							<p class="fs-4 ms-2">🤔 Who is the first ever winner of the AFCON?</p>
+							<input class="form-check-input" type="radio" id="ans23" name="qu2">
+							<label class="form-check-label fs-4" for="ans23">Nigeria</label><br>
+							<input class="form-check-input" type="radio" id="ans22" name="qu2">
+							<label class="form-check-label fs-4" for="ans22">Cameroon</label><br>
+							<input class="form-check-input" type="radio" id="ans21" name="qu2">
+							<label class="form-check-label fs-4" for="ans21">Egypt</label><br>
+							<input class="form-check-input" type="radio" id="ans24" name="qu2">
+							<label class="form-check-label fs-4" for="ans24">Ghana</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r2"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques3">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question3</p>
+							<p class="fs-4 ms-2">🤔 What team has more UCL titles than league titles?</p>
+							<input class="form-check-input" type="radio" id="ans34" name="qu3">
+							<label class="form-check-label fs-4" for="ans34">Liverpool</label><br>
+							<input class="form-check-input" type="radio" id="ans32" name="qu3">
+							<label class="form-check-label fs-4" for="ans32">Marseille</label><br>
+							<input class="form-check-input" type="radio" id="ans33" name="qu3">
+							<label class="form-check-label fs-4" for="ans33">Hamburg</label><br>
+							<input class="form-check-input" type="radio" id="ans31" name="qu3">
+							<label class="form-check-label fs-4" for="ans31">Nottingham Forest</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r3"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques4">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question4</p>
+							<p class="fs-4 ms-2">🤔 Who is the only player to score a hattrick in world cup final?</p>
+							<input class="form-check-input" type="radio" id="ans43" name="qu4">
+							<label class="form-check-label fs-4" for="ans43">Gerd Muller</label><br>
+							<input class="form-check-input" type="radio" id="ans42" name="qu4">
+							<label class="form-check-label fs-4" for="ans42">Pele</label><br>
+							<input class="form-check-input" type="radio" id="ans41" name="qu4">
+							<label class="form-check-label fs-4" for="ans41">Geoffrey Hurst</label><br>
+							<input class="form-check-input" type="radio" id="ans44" name="qu4">
+							<label class="form-check-label fs-4" for="ans44">Zinedine Zidane</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r4"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques5">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question5</p>
+							<p class="fs-4 ms-2">🤔 Who is the only player to win 3 world cups?</p>
+							<input class="form-check-input" type="radio" id="ans52" name="qu5">
+							<label class="form-check-label fs-4" for="ans52">Franz Beckenbauer</label><br>
+							<input class="form-check-input" type="radio" id="ans51" name="qu5">
+							<label class="form-check-label fs-4" for="ans51">Pele</label><br>
+							<input class="form-check-input" type="radio" id="ans53" name="qu5">
+							<label class="form-check-label fs-4" for="ans53">Bobby Charlton</label><br>
+							<input class="form-check-input" type="radio" id="ans54" name="qu5">
+							<label class="form-check-label fs-4" for="ans54">Eusébio</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r5"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques6">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question6</p>
+							<p class="fs-4 ms-2">🤔 Which country has appeared in three World Cup finals, but never won the competition?</p>
+							<input class="form-check-input" type="radio" id="ans62" name="qu6">
+							<label class="form-check-label fs-4" for="ans62">Hungary</label><br>
+							<input class="form-check-input" type="radio" id="ans61" name="qu6">
+							<label class="form-check-label fs-4" for="ans61">Netherlands</label><br>
+							<input class="form-check-input" type="radio" id="ans63" name="qu6">
+							<label class="form-check-label fs-4" for="ans63">Czechoslovakia</label><br>
+							<input class="form-check-input" type="radio" id="ans64" name="qu6">
+							<label class="form-check-label fs-4" for="ans64">Yougoslavia</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r6"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques7">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question7</p>
+							<p class="fs-4 ms-2">🤔 In which World Cup did Diego Maradona score his infamous 'Hand of God' goal?</p>
+							<input class="form-check-input" type="radio" id="ans73" name="qu7">
+							<label class="form-check-label fs-4" for="ans73">1978</label><br>
+							<input class="form-check-input" type="radio" id="ans72" name="qu7">
+							<label class="form-check-label fs-4" for="ans72">1982</label><br>
+							<input class="form-check-input" type="radio" id="ans71" name="qu7">
+							<label class="form-check-label fs-4" for="ans71">1986</label><br>
+							<input class="form-check-input" type="radio" id="ans74" name="qu7">
+							<label class="form-check-label fs-4" for="ans74">1990</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r7"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques8">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question8</p>
+							<p class="fs-4 ms-2">🤔 Which of these teams was the first team from UK to win a european cup</p>
+							<input class="form-check-input" type="radio" id="ans84" name="qu8">
+							<label class="form-check-label fs-4" for="ans84">Liverpool</label><br>
+							<input class="form-check-input" type="radio" id="ans82" name="qu8">
+							<label class="form-check-label fs-4" for="ans82">Manchester United</label><br>
+							<input class="form-check-input" type="radio" id="ans83" name="qu8">
+							<label class="form-check-label fs-4" for="ans83">Nottingham Forest</label><br>
+							<input class="form-check-input" type="radio" id="ans81" name="qu8">
+							<label class="form-check-label fs-4" for="ans81">Celtic</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r8"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques9">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question9</p>
+							<p class="fs-4 ms-2">🤔 Who is the player who scored 13 goals in a single world cup competition?</p>
+							<input class="form-check-input" type="radio" id="ans94" name="qu9">
+							<label class="form-check-label fs-4" for="ans94">Zineddine Zidane</label><br>
+							<input class="form-check-input" type="radio" id="ans92" name="qu9">
+							<label class="form-check-label fs-4" for="ans92">Pele</label><br>
+							<input class="form-check-input" type="radio" id="ans93" name="qu9">
+							<label class="form-check-label fs-4" for="ans93">Lionel Messi</label><br>
+							<input class="form-check-input" type="radio" id="ans91" name="qu9">
+							<label class="form-check-label fs-4" for="ans91">Juste Fontaine</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r9"></p>
+						</fieldset>
+					</div>
+				</div>
+				<div class="row" id="ques10">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<fieldset>
+							<p class="fs-3 text-decoration-underline text-center">Question10</p>
+							<p class="fs-4 ms-2">🤔 Which club has the most league 1 titles?</p>
+							<input class="form-check-input" type="radio" id="ans103" name="qu10">
+							<label class="form-check-label fs-4" for="ans103">Paris Saint Germain</label><br>
+							<input class="form-check-input" type="radio" id="ans102" name="qu10">
+							<label class="form-check-label fs-4" for="ans102">Olympique Lyonnais</label><br>
+							<input class="form-check-input" type="radio" id="ans101" name="qu10">
+							<label class="form-check-label fs-4" for="ans101">Saint Ethienne</label><br>
+							<input class="form-check-input" type="radio" id="ans104" name="qu10">
+							<label class="form-check-label fs-4" for="ans104">Olympique Marseille</label><br><br>
+							<button class="btn btn-outline-primary float-end" onclick="nextQuestion()">Next</button>
+							<p class="float-end alert" id="r10"></p>
+						</fieldset>
+					</div>
+				</div>
+			</form>
+			<div class="row" id="result">
+				<div class="col-md-2">
+					<p class="score">Your Score: <span id="score"></span>/100</p>
+				</div>
+				<div class="col-md-4">
+					<p class="text-decoration-underline fw-bolder fs-4">Answers: </p>
+					<p class="text-success fs-5 fw-bold">Question1: <span class="text-dark">England</span></p>
+					<p class="text-success fs-5 fw-bold">Question2: <span class="text-dark">Egypt</span></p>
+					<p class="text-success fs-5 fw-bold">Question3: <span class="text-dark">Nottingham Forest</span></p>
+					<p class="text-success fs-5 fw-bold">Question4: <span class="text-dark">Geoffrey Hurst</span></p>
+					<p class="text-success fs-5 fw-bold">Question5: <span class="text-dark">Pele</span></p>
+					<p class="text-success fs-5 fw-bold">Question6: <span class="text-dark">Netherlands</span></p>
+					<p class="text-success fs-5 fw-bold">Question7: <span class="text-dark">1986</span></p>
+					<p class="text-success fs-5 fw-bold">Question8: <span class="text-dark">Celtic</span></p>
+					<p class="text-success fs-5 fw-bold">Question9: <span class="text-dark">Juste Fontaine</span></p>
+					<p class="text-success fs-5 fw-bold">Question10: <span class="text-dark">Saint Ethienne</span></p>
+				</div>
+				<div class="col-md-6">
+					<br><br>
+					<p class="text-info fs-5 fw-bold" id="res1">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res2">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res3">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res4">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res5">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res6">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res7">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res8">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res9">Skipped</p>
+					<p class="text-info fs-5 fw-bold" id="res10">Skipped</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

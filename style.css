@@ -1,0 +1,82 @@
+fieldset
+{
+	background-color: rgb(235, 235, 235);
+	border: 2px solid black;
+	padding: 5px;
+}
+
+button
+{
+	border-radius: 5px;
+	margin: 10px 10px 10px 10px;
+}
+
+body
+{
+	background-color: rgb(203, 250, 205);
+}
+
+input,label
+{
+	margin-left: 5px;
+}
+
+#ques1
+{
+	display: none;
+}
+
+#ques2
+{
+	display: none;
+}
+#ques3
+{
+	display: none;
+}
+#ques4
+{
+	display: none;
+}
+#ques5
+{
+	display: none;
+}
+#ques6
+{
+	display: none;
+}
+#ques7
+{
+	display: none;
+}
+#ques8
+{
+	display: none;
+}
+#ques9
+{
+	display: none;
+}
+#ques10
+{
+	display: none;
+}
+
+#result
+{
+	display: none;
+}
+
+.alert
+{
+	color: rgb(150, 150, 1);
+	font-weight: bold;
+}
+
+.score
+{
+	color: black;
+	font-weight: 600;
+	font-family: monospace;
+}
